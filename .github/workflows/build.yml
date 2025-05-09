@@ -57,7 +57,7 @@ jobs:
           name: thunderstore-build
           path: |
             ./Thunderstore/*/assets/thunderstore.toml.user
-            ./Thunderstore/*/bin/Release/netstandard2.1/dist/*.zip
+            ./Thunderstore/*/bin/ReleaseThunderstore/netstandard2.1/dist/*.zip
 
       - name: Upload nupkg artifact
         if: ${{ vars.NUGET_PACKAGE == 'true' }}
