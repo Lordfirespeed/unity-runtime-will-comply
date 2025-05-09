@@ -1,0 +1,34 @@
+﻿<Project>
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <ThunderstoreNamespace>UNSET</ThunderstoreNamespace>
+        <IsThunderstorePackable>true</IsThunderstorePackable>
+        <ThunderstoreName>Unity_Runtime_will_Comply</ThunderstoreName>
+        <ThunderstoreDescription>$(Description)</ThunderstoreDescription>
+        <ThunderstoreIconPath>$(MSBuildThisFileDirectory)assets/icons/icon.png</ThunderstoreIconPath>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ThunderstoreBuildCopyPath Include="$(MSBuildThisFileDirectory)../LICENSE" Destination="/"/>
+    </ItemGroup>
+
+    <ItemGroup>
+        <PreThunderstoreGenTargetName Include="AddAssemblyCopyPaths" />
+    </ItemGroup>
+
+    <Target Name="AddAssemblyCopyPaths">
+        <Exec Command="dotnet run --no-build --project $(SolutionDir)Build" ConsoleToMsBuild="true" EchoOff="true">
+            <Output TaskParameter="ConsoleOutput" ItemName="BuildOutput" />
+        </Exec>
+        
+        <PropertyGroup>
+            <PatchedAssembliesDirectory>@(BuildOutput)/ref/netstandard2.1</PatchedAssembliesDirectory>
+        </PropertyGroup>
+
+        <ItemGroup>
+            <ThunderstoreBuildCopyPath Include="$(PatchedAssembliesDirectory)" Destination="BepInEx/core/unity-runtime-will-comply" />
+        </ItemGroup>
+    </Target>
+
+</Project>

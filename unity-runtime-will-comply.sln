@@ -2,15 +2,30 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Build", "Build\Build.csproj", "{81573598-AB15-4CDC-BBF6-D08686C29EB8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "repo", "Thunderstore\repo\repo.csproj", "{400257F6-BCF4-42D2-A43F-54DEEE7800D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lethal-company", "Thunderstore\lethal-company\lethal-company.csproj", "{0622DD6D-B09E-4DDE-8EB9-5BFF89CA3F3C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
+		DebugTools|Any CPU = DebugTools|Any CPU
+		ReleaseTools|Any CPU = ReleaseTools|Any CPU
+		ReleaseThunderstore|Any CPU = ReleaseThunderstore|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{81573598-AB15-4CDC-BBF6-D08686C29EB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{81573598-AB15-4CDC-BBF6-D08686C29EB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{81573598-AB15-4CDC-BBF6-D08686C29EB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{81573598-AB15-4CDC-BBF6-D08686C29EB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81573598-AB15-4CDC-BBF6-D08686C29EB8}.DebugTools|Any CPU.ActiveCfg = DebugTools|Any CPU
+		{81573598-AB15-4CDC-BBF6-D08686C29EB8}.DebugTools|Any CPU.Build.0 = DebugTools|Any CPU
+		{81573598-AB15-4CDC-BBF6-D08686C29EB8}.ReleaseTools|Any CPU.ActiveCfg = ReleaseTools|Any CPU
+		{81573598-AB15-4CDC-BBF6-D08686C29EB8}.ReleaseTools|Any CPU.Build.0 = ReleaseTools|Any CPU
+		{81573598-AB15-4CDC-BBF6-D08686C29EB8}.ReleaseThunderstore|Any CPU.ActiveCfg = ReleaseThunderstore|Any CPU
+		{81573598-AB15-4CDC-BBF6-D08686C29EB8}.ReleaseThunderstore|Any CPU.Build.0 = ReleaseThunderstore|Any CPU
+		{400257F6-BCF4-42D2-A43F-54DEEE7800D6}.DebugTools|Any CPU.ActiveCfg = Debug|Any CPU
+		{400257F6-BCF4-42D2-A43F-54DEEE7800D6}.ReleaseTools|Any CPU.ActiveCfg = Debug|Any CPU
+		{400257F6-BCF4-42D2-A43F-54DEEE7800D6}.ReleaseThunderstore|Any CPU.ActiveCfg = ReleaseThunderstore|Any CPU
+		{400257F6-BCF4-42D2-A43F-54DEEE7800D6}.ReleaseThunderstore|Any CPU.Build.0 = ReleaseThunderstore|Any CPU
+		{0622DD6D-B09E-4DDE-8EB9-5BFF89CA3F3C}.DebugTools|Any CPU.ActiveCfg = Debug|Any CPU
+		{0622DD6D-B09E-4DDE-8EB9-5BFF89CA3F3C}.ReleaseTools|Any CPU.ActiveCfg = Debug|Any CPU
+		{0622DD6D-B09E-4DDE-8EB9-5BFF89CA3F3C}.ReleaseThunderstore|Any CPU.ActiveCfg = ReleaseThunderstore|Any CPU
+		{0622DD6D-B09E-4DDE-8EB9-5BFF89CA3F3C}.ReleaseThunderstore|Any CPU.Build.0 = ReleaseThunderstore|Any CPU
 	EndGlobalSection
 EndGlobal

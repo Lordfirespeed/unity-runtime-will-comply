@@ -1,13 +1,19 @@
 <Project>
     <Import Project="Sdk.props" Sdk="Sigurd.Thunderstore.Sdk" />
 
+    <!-- Build configurations -->
+    <PropertyGroup>
+        <Configurations>DebugTools;ReleaseTools;ReleaseThunderstore</Configurations>
+        <Platforms>AnyCPU</Platforms>
+    </PropertyGroup>
+
     <!-- Compiler/MSBuild switches -->
     <PropertyGroup>
         <NeutralLanguage>en-GB</NeutralLanguage>
         <LangVersion>latest</LangVersion>
         <Nullable>enable</Nullable>
     </PropertyGroup>
-    
+
     <!-- Metadata -->
     <PropertyGroup>
         <Authors>Lordfirespeed</Authors>
@@ -20,6 +26,26 @@
         <PackageLicenseExpression>LGPL-3.0-or-later</PackageLicenseExpression>
     </PropertyGroup>
 
-  
-    
+    <!-- Thunderstore metadata -->
+    <PropertyGroup>
+        <IsThunderstorePackable>false</IsThunderstorePackable>
+        <ThunderstoreWebsiteUrl>$(RepositoryUrl)</ThunderstoreWebsiteUrl>
+        <ThunderstoreReadmePath>$(MSBuildThisFileDirectory)README.md</ThunderstoreReadmePath>
+    </PropertyGroup>
+
+    <!-- MinVer -->
+    <PropertyGroup>
+        <MinVerDefaultPreReleaseIdentifiers>dev</MinVerDefaultPreReleaseIdentifiers>
+        <MinVerTagPrefix>v</MinVerTagPrefix>
+    </PropertyGroup>
+    <ItemGroup>
+        <PackageReference Include="MinVer" Version="6.0.0">
+            <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+            <PrivateAssets>all</PrivateAssets>
+        </PackageReference>
+        <SetThunderstorePackageVersionTargetName Include="SetVersion" />
+    </ItemGroup>
+
+    <!-- Import local user props -->
+    <Import Project="$(SolutionDir)bepinex-metalibrary.props.user" Condition="Exists('$(SolutionDir)bepinex-metalibrary.props.user')"/>
 </Project>
