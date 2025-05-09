@@ -1,0 +1,51 @@
+# Exclude everything
+/*
+
+# Specific includes
+
+## Editorconfig
+!.editorconfig
+
+## Build System/Scripts
+!/.config
+!/global.json
+!/NuGet.Config
+!/Directory.Build.props
+!/Directory.Build.targets
+!/Directory.Packages.props
+!/build.sh
+
+## Markdowns
+!*.md
+!/LICENSE
+!/licenses
+
+## important Git files
+!.gitmodules
+!.gitignore
+!.gitattributes
+!.git-blame-ignore-revs
+
+## GitHub specific
+!.github/
+
+## Libraries
+!/libs
+
+## Solution
+!unity-runtime-will-comply.sln
+
+### Projects
+!/Build
+/Build/[Bb]in
+/Build/[Oo]bj
+
+### Thunderstore Build Projects
+!/Thunderstore
+/Thunderstore/*/[Bb]in
+/Thunderstore/*/[Oo]bj
+
+# Explicit exceptions/ignores
+**.user
+**.local
+!**.template.*.user

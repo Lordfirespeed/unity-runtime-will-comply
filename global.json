@@ -1,0 +1,10 @@
+{
+  "sdk": {
+    "version": "9.0.0",
+    "rollForward": "latestMajor",
+    "allowPrerelease": true
+  },
+  "msbuild-sdks": {
+    "Sigurd.Thunderstore.Sdk": "0.5.0"
+  }
+}

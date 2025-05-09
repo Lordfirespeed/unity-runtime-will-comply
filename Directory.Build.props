@@ -1,0 +1,25 @@
+<Project>
+    <Import Project="Sdk.props" Sdk="Sigurd.Thunderstore.Sdk" />
+
+    <!-- Compiler/MSBuild switches -->
+    <PropertyGroup>
+        <NeutralLanguage>en-GB</NeutralLanguage>
+        <LangVersion>latest</LangVersion>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+    
+    <!-- Metadata -->
+    <PropertyGroup>
+        <Authors>Lordfirespeed</Authors>
+        <IsPackable>false</IsPackable>
+        <Description>Unity Runtime WILL comply with .NET Standard 2.1. Whether it likes it or not.</Description>
+        <PackageProjectUrl>https://github.com/Lordfirespeed/unity-runtime-will-comply</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/Lordfirespeed/unity-runtime-will-comply</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+        <PackageLicenseExpression>LGPL-3.0-or-later</PackageLicenseExpression>
+    </PropertyGroup>
+
+  
+    
+</Project>
