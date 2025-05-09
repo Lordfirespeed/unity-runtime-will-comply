@@ -14,6 +14,7 @@
 !/Directory.Build.targets
 !/Directory.Packages.props
 !/build.sh
+!/makefile
 
 ## Markdowns
 !*.md
