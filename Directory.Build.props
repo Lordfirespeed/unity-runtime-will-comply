@@ -47,5 +47,5 @@
     </ItemGroup>
 
     <!-- Import local user props -->
-    <Import Project="$(SolutionDir)bepinex-metalibrary.props.user" Condition="Exists('$(SolutionDir)bepinex-metalibrary.props.user')"/>
+    <Import Project="$(SolutionDir)unity-runtime-will-comply.props.user" Condition="Exists('$(SolutionDir)unity-runtime-will-comply.props.user')"/>
 </Project>
