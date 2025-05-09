@@ -1,21 +1,14 @@
-.PHONY: default debug debug-tools release release-tools release-thunderstore
+.PHONY: default release build-tools release-thunderstore
 
 # the first target is run by default, so make an empty target
 default: ;
 
-debug:
-	$(MAKE) debug-tools
-	$(MAKE) release-thunderstore
-
 release:
-	$(MAKE) release-tools
+	$(MAKE) build-tools
 	$(MAKE) release-thunderstore
 
-debug-tools:
-	dotnet build -c DebugTools
-
-release-tools:
-	dotnet build -c ReleaseTools
+build-tools:
+	dotnet build -c BuildTools
 
 release-thunderstore:
 	dotnet build -c ReleaseThunderstore

@@ -8,24 +8,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lethal-company", "Thunderst
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		DebugTools|Any CPU = DebugTools|Any CPU
-		ReleaseTools|Any CPU = ReleaseTools|Any CPU
+		BuildTools|Any CPU = BuildTools|Any CPU
 		ReleaseThunderstore|Any CPU = ReleaseThunderstore|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{81573598-AB15-4CDC-BBF6-D08686C29EB8}.DebugTools|Any CPU.ActiveCfg = DebugTools|Any CPU
-		{81573598-AB15-4CDC-BBF6-D08686C29EB8}.DebugTools|Any CPU.Build.0 = DebugTools|Any CPU
-		{81573598-AB15-4CDC-BBF6-D08686C29EB8}.ReleaseTools|Any CPU.ActiveCfg = ReleaseTools|Any CPU
-		{81573598-AB15-4CDC-BBF6-D08686C29EB8}.ReleaseTools|Any CPU.Build.0 = ReleaseTools|Any CPU
+		{81573598-AB15-4CDC-BBF6-D08686C29EB8}.BuildTools|Any CPU.ActiveCfg = BuildTools|Any CPU
+		{81573598-AB15-4CDC-BBF6-D08686C29EB8}.BuildTools|Any CPU.Build.0 = BuildTools|Any CPU
 		{81573598-AB15-4CDC-BBF6-D08686C29EB8}.ReleaseThunderstore|Any CPU.ActiveCfg = ReleaseThunderstore|Any CPU
-		{81573598-AB15-4CDC-BBF6-D08686C29EB8}.ReleaseThunderstore|Any CPU.Build.0 = ReleaseThunderstore|Any CPU
-		{400257F6-BCF4-42D2-A43F-54DEEE7800D6}.DebugTools|Any CPU.ActiveCfg = Debug|Any CPU
-		{400257F6-BCF4-42D2-A43F-54DEEE7800D6}.ReleaseTools|Any CPU.ActiveCfg = Debug|Any CPU
-		{400257F6-BCF4-42D2-A43F-54DEEE7800D6}.ReleaseThunderstore|Any CPU.ActiveCfg = ReleaseThunderstore|Any CPU
-		{400257F6-BCF4-42D2-A43F-54DEEE7800D6}.ReleaseThunderstore|Any CPU.Build.0 = ReleaseThunderstore|Any CPU
-		{0622DD6D-B09E-4DDE-8EB9-5BFF89CA3F3C}.DebugTools|Any CPU.ActiveCfg = Debug|Any CPU
-		{0622DD6D-B09E-4DDE-8EB9-5BFF89CA3F3C}.ReleaseTools|Any CPU.ActiveCfg = Debug|Any CPU
+		{0622DD6D-B09E-4DDE-8EB9-5BFF89CA3F3C}.BuildTools|Any CPU.ActiveCfg = BuildTools|Any CPU
 		{0622DD6D-B09E-4DDE-8EB9-5BFF89CA3F3C}.ReleaseThunderstore|Any CPU.ActiveCfg = ReleaseThunderstore|Any CPU
 		{0622DD6D-B09E-4DDE-8EB9-5BFF89CA3F3C}.ReleaseThunderstore|Any CPU.Build.0 = ReleaseThunderstore|Any CPU
+		{400257F6-BCF4-42D2-A43F-54DEEE7800D6}.BuildTools|Any CPU.ActiveCfg = BuildTools|Any CPU
+		{400257F6-BCF4-42D2-A43F-54DEEE7800D6}.ReleaseThunderstore|Any CPU.ActiveCfg = ReleaseThunderstore|Any CPU
+		{400257F6-BCF4-42D2-A43F-54DEEE7800D6}.ReleaseThunderstore|Any CPU.Build.0 = ReleaseThunderstore|Any CPU
 	EndGlobalSection
 EndGlobal

@@ -7,10 +7,6 @@
         <ThunderstoreAuthToken>$(REPO_THUNDERSTORE_API_TOKEN)</ThunderstoreAuthToken>
     </PropertyGroup>
 
-    <PropertyGroup Condition=" '$(Configuration)' == 'ReleaseThunderstore' ">
-      <Optimize Condition=" '$(Optimize)' == '' ">true</Optimize>
-    </PropertyGroup>
-
     <ItemGroup>
         <ThunderstorePublishCommunity Include="repo" CategorySlugs="libraries"/>
     </ItemGroup>

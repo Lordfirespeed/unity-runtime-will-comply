@@ -3,7 +3,7 @@
 
     <!-- Build configurations -->
     <PropertyGroup>
-        <Configurations>DebugTools;ReleaseTools;ReleaseThunderstore</Configurations>
+        <Configurations>BuildTools;ReleaseThunderstore</Configurations>
         <Platforms>AnyCPU</Platforms>
     </PropertyGroup>
 

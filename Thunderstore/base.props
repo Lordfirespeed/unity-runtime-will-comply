@@ -18,7 +18,7 @@
     </ItemGroup>
 
     <Target Name="AddAssemblyCopyPaths">
-        <Exec Command="dotnet run --no-build --project $(SolutionDir)Build" ConsoleToMsBuild="true" EchoOff="true">
+        <Exec Command="dotnet run -c BuildTools --no-build --project $(SolutionDir)Build" ConsoleToMsBuild="true" EchoOff="true">
             <Output TaskParameter="ConsoleOutput" ItemName="BuildOutput" />
         </Exec>
         
